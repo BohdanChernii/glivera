@@ -1,0 +1,89 @@
+.sushiStore {
+  width: 360px;
+
+  padding: 15px;
+  font-family: 'Din Pro', sans-serif;
+  margin: auto;
+  &__header {
+    display: flex;
+  }
+  .header {
+    &__contacts {
+      text-align: center;
+    }
+    .contacts {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: 28px;
+      &__number {
+        color: #ff9846;
+      }
+    }
+    .schedule {
+      text-align: center;
+      font-weight: 500, Medium;
+      color: #a4acad;
+      margin-left: 25px;
+      margin-right: 29px;
+      font-size: 12px;
+    }
+  }
+  &__main {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    .product {
+      width: 162px;
+      height: 157px;
+      border-radius: 5px;
+      border: 1px solid red;
+      padding: 10px 0 0 11px;
+      margin: 1px;
+      &__combo {
+        flex-grow: 1;
+      }
+      &__title {
+        font-weight: 500;
+        line-height: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (min-width: 1170px) {
+  .sushiStore {
+    width: 1170px;
+    .header {
+      width: 1170px;
+      &__contacts {
+        text-align: center;
+      }
+      .schedule {
+        margin-left: 500px;
+      }
+      &__search {
+        margin-left: auto;
+      }
+    }
+    &__main {
+      width: 1170px;
+      padding: 0 110px;
+      .product {
+        margin-right: 23px;
+        margin-bottom: 23px;
+        width: 450px;
+        height: 200px;
+        &__sets {
+          width: 210px;
+        }
+        &__wok {
+          width: 210px;
+        }
+        &__combo {
+          flex-grow: 0;
+        }
+      }
+    }
+  }
+}
